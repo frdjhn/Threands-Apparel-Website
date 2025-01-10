@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threands Apparel - About Us</title>
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section Starts -->
+    <header class="header">
+        <a href="home.html" class="logo">
+            <img src="home/Threands.png" alt="Threands Logo">
+        </a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="collection.html">Collection</a>
+            <a href="product.html">Products</a>
+            <a href="review.html">Review</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="search-container">
+            <div class="search-form" id="search-form">
+                <input type="text" id="search-input" placeholder="Search items...">
+                <button id="search-button" onclick="searchItems()">Search</button>
+            </div>
+        </div>
+        <div class="fas fa-search" id="search-btn"></div>
+            
+            <div class="fas fa-shopping-cart" id="cart-btn"><span id="cart-count"></span></div>
+            <a href="user.html">
+                <div class="fas fa-user" id="user-btn"></div>
+            </a>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+
+        <div class="cart-items-container" id="cart-items">
+            <h2>Your Cart</h2>
+            <div id="cart-content">
+                <!-- Cart items will be added dynamically -->
+            </div>
+            <button id="checkout-btn" class="btn">Checkout</button>
+        </div>
+
+    </header>
+    <!-- Header Section Ends -->
+     
+    <!-- About Section Starts -->
+    <section class="about" id="about">
+        <h1 class="heading"><span>About</span> Us</h1>
+        <div class="row">
+            <div class="image">
+                <img src="home/Threands Logo.png" alt="About Us">
+            </div>
+            <div class="content">
+                <h3>Welcome to Threands Apparel!</h3>
+                <p>At Threands, we believe that fashion should be simple, comfortable, and stylish. Our goal is to bring you high-quality clothing that fits into your everyday life, whether you're relaxing at home or out with friends. 
+                <br><br>We offer a range of trendy and affordable apparel for men and women, from classic tees to cozy hoodies. Every piece is designed with comfort in mind and made to last, so you can wear it again and again.
+                <br><br>Our mission is to help you express yourself through fashion. No matter your style, we want to provide you with the perfect outfit that makes you feel confident and at ease.
+                <p>Join our community and experience fashion like never before!</p>
+                <a href="blog.html" class="btn">Discover More</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section Ends -->
+
+    <!-- Footer Section Starts -->
+    <section class="footer">
+        <div class="share">
+            <a href="https://www.facebook.com/ThREaNDsApparel?mibextid=ZbWKwL" target="_blank" class="fab fa-facebook-f" aria-label="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank" class="fab fa-twitter" aria-label="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram" aria-label="Instagram"></a>
+            <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+            <a href="https://www.pinterest.com" target="_blank" class="fab fa-pinterest" aria-label="Pinterest"></a>
+        </div>
+        <div class="credit">created by <span>BSIndTech Inspire - Group 1</span> | all rights reserved</div>
+    </section>
+    <!-- Footer Section Ends -->
+
+    <script src="script.js"></script>
+</body>
+</html>

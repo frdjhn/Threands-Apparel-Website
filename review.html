@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threands Apparel - Reviews</title>
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section Starts -->
+    <header class="header">
+        <a href="home.html" class="logo">
+            <img src="home/Threands.png" alt="Threands Logo">
+        </a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="collection.html">Collection</a>
+            <a href="product.html">Products</a>
+            <a href="review.html">Review</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="search-container">
+            <div class="search-form" id="search-form">
+                <input type="text" id="search-input" placeholder="Search items...">
+                <button id="search-button" onclick="searchItems()">Search</button>
+            </div>
+        </div>
+        <div class="fas fa-search" id="search-btn"></div>
+            
+            <div class="fas fa-shopping-cart" id="cart-btn"><span id="cart-count"></span></div>
+            <a href="user.html">
+                <div class="fas fa-user" id="user-btn"></div>
+            </a>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+
+        <div class="cart-items-container" id="cart-items">
+            <h2>Your Cart</h2>
+            <div id="cart-content">
+                <!-- Cart items will be added dynamically -->
+            </div>
+            <button id="checkout-btn" class="btn">Checkout</button>
+        </div>
+
+    </header>
+    <!-- Header Section Ends -->
+
+    <!-- Review Section Starts -->
+    <section class="review" id="review">
+        <h1 class="heading">customer's <span>review</span></h1>
+        <div class="box-container">
+    
+            <div class="box" id="sw-set1">
+                <img src="street wear/BlackSW1.jpg" class="quote" alt="">
+                <p>"I absolutely love my new hoodie from ThREaNDs! The material is super soft, and the fit is just right. I was worried about sizing, but their guide was spot on. It’s become my go-to for chilly mornings. Definitely going to buy more!"</p>
+                <img src="review/fredreview.jpg" class="user" alt="">
+                <h3>Fred Jhon S. Caño</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+    
+            <div class="box" id="sw-set1">
+                <img src="street wear/GreySW1.jpg" alt="" class="quote">
+                <p>""Bought this as a little surprise for my son, and he couldn’t stop smiling when he tried it on. The fabric feels soft and breathable, and the shorts have the perfect length. He’s been wearing it non-stop during the weekends. Worth every penny!"</p>
+                <img src="review/rezelreview.jpg" class="user" alt="">
+                <h3>Rezel Esclamado</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+    
+            <div class="box" id="cw-set2">
+                <img src="casual wear/ArmyGreenCW2.jpg" alt="" class="quote">
+                <p>"Picked this set up as a gift for my boyfriend, and he looked amazing in it! The shirt has a sleek, casual vibe, and the pants are comfy yet stylish. Perfect for date nights or even lounging around. He’s already asking me to find more sets like this!"</p>
+                <img src="review/christianreview.jpg" class="user" alt="">
+                <h3>Christian Rama</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="box" id="cw-set2">
+                <img src="casual wear/ChampagneCW2.jpg" alt="" class="quote">
+                <p>"I got this for my boyfriend, and he’s obsessed! The pants have that perfect relaxed fit without looking baggy, and the shirt fits him like it was tailored. It’s his go-to outfit now whenever we go out. Highly recommend it for anyone who wants stylish comfort."</p>
+                <img src="review/gesellereview.jpg" class="user" alt="">
+                <h3>Geselle Cabuenas</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+    
+            <div class="box" id="fw-set2">
+                <img src="formal wear/BurgundyFW2.jpg" alt="" class="quote">
+                <p>"This waistcoat is such a classy piece! I got it for a formal event, and I’ve never gotten so many compliments before. The fit is sharp, and the retro style really stands out. Pair it with a crisp white shirt, and you’re good to go. Totally worth it for the quality and style!"</p>
+                <img src="review/haroldreview.jpg" class="user" alt="">
+                <h3>Harold Jim Ignacio</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Review Section Ends -->
+ 
+    <!-- Footer Section Starts -->
+    <section class="footer">
+        <div class="share">
+            <a href="https://www.facebook.com/ThREaNDsApparel?mibextid=ZbWKwL" target="_blank" class="fab fa-facebook-f" aria-label="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank" class="fab fa-twitter" aria-label="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram" aria-label="Instagram"></a>
+            <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+            <a href="https://www.pinterest.com" target="_blank" class="fab fa-pinterest" aria-label="Pinterest"></a>
+        </div>
+        <div class="credit">created by <span>BSIndTech Inspire - Group 1</span> | all rights reserved</div>
+    </section>
+    <!-- Footer Section Ends -->
+
+    <script src="script.js"></script>
+</body>
+</html>

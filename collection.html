@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threands Apparel - Collection</title>
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section Starts -->
+    <header class="header">
+        <a href="home.html" class="logo">
+            <img src="home/Threands.png" alt="Threands Logo">
+        </a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="collection.html">Collection</a>
+            <a href="product.html">Products</a>
+            <a href="review.html">Review</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="search-container">
+            <div class="search-form" id="search-form">
+                <input type="text" id="search-input" placeholder="Search items...">
+                <button id="search-button" onclick="searchItems()">Search</button>
+            </div>
+        </div>
+        <div class="fas fa-search" id="search-btn"></div>
+            
+            <div class="fas fa-shopping-cart" id="cart-btn"><span id="cart-count"></span></div>
+            <a href="user.html">
+                <div class="fas fa-user" id="user-btn"></div>
+            </a>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+
+        <div class="cart-items-container" id="cart-items">
+            <h2>Your Cart</h2>
+            <div id="cart-content">
+                <!-- Cart items will be added dynamically -->
+            </div>
+            <div class="checkout-btn-container">
+                <button id="checkout-btn" class="btn">Checkout</button>
+            </div>
+        </div>
+
+    </header>
+    <!-- Header Section Ends -->
+    
+    <!-- Collection Section Starts -->
+    <section class="collection" id="collection">
+        <h1 class="heading">Our <span>Collection</span></h1>
+
+        <!-- Street Wear -->
+        <div class="category">
+            <h2 class="sub-heading">Street Wear</h2>
+            <div class="box-container">
+                <div class="box" data-item="sw-set1">
+                    <!-- Main photo -->
+                    <div class="main-photo">
+                        <img id="main-photo-1" src="street wear/ApricotSW1.jpg" alt="Main Photo">
+                    </div>
+                    <!-- Thumbnail photos -->
+                    <div class="thumbnails">
+                        <img class="thumbnail" src="street wear/ApricotSW1.jpg" alt="Thumbnail1 1" onclick="changeMainImage('main-photo-1', 'street wear/ApricotSW1.jpg')">
+                        <img class="thumbnail" src="street wear/BlackSW1.jpg" alt="Thumbnail1 2" onclick="changeMainImage('main-photo-1', 'street wear/BlackSW1.jpg')">
+                        <img class="thumbnail" src="street wear/WhiteSW1.jpg" alt="Thumbnail1 3" onclick="changeMainImage('main-photo-1', 'street wear/WhiteSW1.jpg')">
+                        <img class="thumbnail" src="street wear/GreySW1.jpg" alt="Thumbnail1 4" onclick="changeMainImage('main-photo-1', 'street wear/GreySW1.jpg')">
+                        <img class="thumbnail" src="street wear/GreenSW1.jpg" alt="Thumbnail1 5" onclick="changeMainImage('main-photo-1', 'street wear/GreenSW1.jpg')">
+                    </div>
+                    <h3>Crew Neck Short Sleeve T-Shirt & Drawstring Shorts</h3>
+                    <div class="price">₱673 <span>₱1,848</span></div>
+                    <div class="options">
+                        <!-- Color options -->
+                        <h4>Colors:</h4>
+                        <div class="colors">
+                            <span style="background: rgb(35, 34, 34);" title="Apricot"></span>
+                            <span style="background: black;" title="Black"></span>
+                            <span style="background: white;" title="White"></span>
+                            <span style="background: grey;" title="Grey"></span>
+                            <span style="background: green;" title="Green"></span>
+                        </div>                        
+
+                        <!-- Size options -->
+                        <h4>Sizes:</h4>
+                        <div class="sizes">
+                            <button>XS</button>
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <!-- Second product box -->
+                <div class="box" data-item="sw-set2">
+                    <!-- Main photo -->
+                    <div class="main-photo">
+                        <img id="main-photo-2" src="street wear/BlackSW2.jpg" alt="Main Photo">
+                    </div>
+                    <!-- Thumbnail photos -->
+                    <div class="thumbnails">
+                        <img class="thumbnail" src="street wear/BlackSW2.jpg" alt="Thumbnail2 1" onclick="changeMainImage('main-photo-2', 'street wear/BlackSW2.jpg')">
+                        <img class="thumbnail" src="street wear/ApricotSW2.jpg" alt="Thumbnail2 2" onclick="changeMainImage('main-photo-2', 'street wear/ApricotSW2.jpg')">
+                        <img class="thumbnail" src="street wear/MixedColorSW2.jpg" alt="Thumbnail2 3" onclick="changeMainImage('main-photo-2', 'street wear/MixedColorSW2.jpg')">
+                    </div>
+                    <h3>Short Sleeve Baseball Jersey Shirts & Drawstring Shorts</h3>
+                    <div class="price">₱873 <span>₱1,400</span></div>
+                    <div class="options">
+                        <!-- Color options -->
+                        <h4>Colors:</h4>
+                        <div class="colors">
+                            <span style="background: black;" title="Black"></span>
+                            <span style="background: rgb(35, 34, 34);" title="Apricot"></span>
+                            <span style="background: linear-gradient(to right, #ff7f00, #ff0000);" title="Mixed Color"></span>
+                        </div>
+
+                        <!-- Size options -->
+                        <h4>Sizes:</h4>
+                        <div class="sizes">
+                            <button>XS</button>
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+    
+        <!-- Casual Wear -->
+        <div class="category">
+            <h2 class="sub-heading">Casual Wear</h2>
+            <div class="box-container">
+                <div class="box" data-item="cw-set1">
+                    <!-- Main photo -->
+                    <div class="main-photo">
+                        <img id="main-photo-3" src="casual wear/MIdnightBlackCW1.jpg" alt="Main Photo">
+                    </div>
+                    <!-- Thumbnail photos -->
+                    <div class="thumbnails">
+                        <img class="thumbnail" src="casual wear/MIdnightBlackCW1.jpg" alt="Thumbnail3 1" onclick="changeMainImage('main-photo-3', 'casual wear/MIdnightBlackCW1.jpg')">
+                        <img class="thumbnail" src="casual wear/SpaceBlackCW1.jpg" alt="Thumbnail3 2" onclick="changeMainImage('main-photo-3', 'casual wear/SpaceBlackCW1.jpg')">
+                        <img class="thumbnail" src="casual wear/CharcoalCW1.jpg" alt="Thumbnail3 3" onclick="changeMainImage('main-photo-3', 'casual wear/CharcoalCW1.jpg')">
+                        <img class="thumbnail" src="casual wear/BlackCW1.jpg" alt="Thumbnail3 4" onclick="changeMainImage('main-photo-3', 'casual wear/BlackCW1.jpg')">
+                        <img class="thumbnail" src="casual wear/MixedColorCW1.jpg" alt="Thumbnail3 5" onclick="changeMainImage('main-photo-3', 'casual wear/MixedColorCW1.jpg')">
+                    </div>
+                    <h3>Graphic Tee & Drawstring Casual Pants</h3>
+                    <div class="price">₱860 <span>₱1,200</span></div>
+                    <div class="options">
+                        <!-- Color options -->
+                        <h4>Colors:</h4>
+                        <div class="colors">
+                            <span style="background: #1c1c1c;" title="Midnight Black"></span>
+                            <span style="background: #333333;" title="Space Black"></span>
+                            <span style="background: rgb(35, 34, 34);" title="Charcoal"></span>
+                            <span style="background: #000000;" title="Black"></span>
+                            <span style="background: linear-gradient(to right, #ff7f00, #ff0000);" title="Mixed Color"></span>
+                        </div>
+
+                        <!-- Size options -->
+                        <h4>Sizes:</h4>
+                        <div class="sizes">
+                            <button>XS</button>
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="box" data-item="cw-set2">
+                    <!-- Main photo -->
+                    <div class="main-photo">
+                        <img id="main-photo-4" src="casual wear/ArmyGreenCW2.jpg" alt="Main Photo">
+                    </div>
+                    <!-- Thumbnail photos -->
+                    <div class="thumbnails">
+                        <img class="thumbnail" src="casual wear/ArmyGreenCW2.jpg" alt="Thumbnail4 1" onclick="changeMainImage('main-photo-4', 'casual wear/ArmyGreenCW2.jpg')">
+                        <img class="thumbnail" src="casual wear/BlackCW2.jpg" alt="Thumbnail4 2" onclick="changeMainImage('main-photo-4', 'casual wear/BlackCW2.jpg')">
+                        <img class="thumbnail" src="casual wear/ChampagneCW2.jpg" alt="Thumbnail4 3" onclick="changeMainImage('main-photo-4', 'casual wear/ChampagneCW2.jpg')">
+
+                    </div>
+                    <h3>Long-Sleeved Shirt & Drawstring Casual Pants</h3>
+                    <div class="price">₱1,106 <span>₱3,230</span></div>
+                    <div class="options">
+                        <!-- Color options -->
+                        <h4>Colors:</h4>
+                        <div class="colors">
+                            <span style="background: #4B5320;" title="ArmyGreen"></span> <!-- Army Green -->
+                            <span style="background: black;" title="Black"></span> <!-- Black -->
+                            <span style="background: #F1E0C6;" title="Champagne"></span> <!-- Champagne -->
+                        </div>
+                        
+
+                        <!-- Size options -->
+                        <h4>Sizes:</h4>
+                        <div class="sizes">
+                            <button>XS</button>
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    
+
+
+        
+        <!-- Formal Wear -->
+        <div class="category">
+            <h2 class="sub-heading">Formal Wear</h2>
+            <div class="box-container">
+                <div class="box" data-item="fw-set1">
+                <!-- Main photo -->
+                <div class="main-photo">
+                    <img id="main-photo-5" src="formal wear/RoyalBlueFW1.jpg" alt="Main Photo">
+                </div>
+                <!-- Thumbnail photos -->
+                <div class="thumbnails">
+                    <img class="thumbnail" src="formal wear/RoyalBlueFW1.jpg" alt="Thumbnail5 1" onclick="changeMainImage('main-photo-5', 'formal wear/RoyalBlueFW1.jpg')">
+                    <img class="thumbnail" src="formal wear/SkyBlueFW1.jpg" alt="Thumbnail5 2" onclick="changeMainImage('main-photo-5', 'formal wear/SkyBlueFW1.jpg')">
+                    <img class="thumbnail" src="formal wear/RedFW1.jpg" alt="Thumbnail5 3" onclick="changeMainImage('main-photo-5', 'formal wear/RedFW1.jpg')">
+                    <img class="thumbnail" src="formal wear/GreyFW1.jpg" alt="Thumbnail5 4" onclick="changeMainImage('main-photo-5', 'formal wear/GreyFW1.jpg')">
+                    <img class="thumbnail" src="formal wear/BlackFW1.jpg" alt="Thumbnail5 5" onclick="changeMainImage('main-photo-5', 'formal wear/BlackFW1.jpg')">
+                </div>
+                <h3>Men's Suit Set Tuxedo Black Coat Korean Formal Attire Slim Fit</h3>
+                <div class="price">₱2,450 <span>₱3,800</span></div>
+                <div class="options">
+                    <!-- Color options -->
+                    <h4>Colors:</h4>
+                    <div class="colors">
+                        <span style="background: royalblue;" title="Royal Blue"></span>
+                        <span style="background: skyblue;" title="Sky Blue"></span>
+                        <span style="background: red;" title="Red"></span>
+                        <span style="background: grey;" title="Grey"></span>
+                        <span style="background: black;" title="Black"></span>
+                    </div>
+
+                    <!-- Size options -->
+                    <h4>Sizes:</h4>
+                    <div class="sizes">
+                        <button>XS</button>
+                        <button>S</button>
+                        <button>M</button>
+                        <button>L</button>
+                        <button>XL</button>
+                    </div>
+                </div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="box" data-item="fw-set2">
+                <!-- Main photo -->
+                <div class="main-photo">
+                    <img id="main-photo-6" src="formal wear/BurgundyFW2.jpg" alt="Main Photo">
+                </div>
+                <!-- Thumbnail photos -->
+                <div class="thumbnails">
+                    <img class="thumbnail" src="formal wear/BurgundyFW2.jpg" alt="Thumbnail6 1" onclick="changeMainImage('main-photo-6', 'formal wear/BurgundyFW2.jpg')">
+                    <img class="thumbnail" src="formal wear/NavyBlueFW2.jpg" alt="Thumbnail6 2" onclick="changeMainImage('main-photo-6', 'formal wear/NavyBlueFW2.jpg')">
+                    <img class="thumbnail" src="formal wear/CoffeeFW2.jpg" alt="Thumbnail6 3" onclick="changeMainImage('main-photo-6', 'formal wear/CoffeeFW2.jpg')">
+                    <img class="thumbnail" src="formal wear/LightGreyFW2.jpg" alt="Thumbnail6 3" onclick="changeMainImage('main-photo-6', 'formal wear/LightGreyFW2.jpg')">
+                </div>
+                <h3>Men's Retro Herringbone Single Breasted Dress Waistcoat</h3>
+                <div class="price">₱765 <span>₱1,435</span></div>
+                <div class="options">
+                    <!-- Color options -->
+                    <h4>Colors:</h4>
+                    <div class="colors">
+                        <span style="background: #800020;" title="Burgundy"></span> <!-- Burgundy -->
+                        <span style="background: #000080;" title="Navy Blue"></span> <!-- Navy Blue -->
+                        <span style="background: #6F4E37;" title="Coffee"></span> <!-- Coffee -->
+                        <span style="background: #D3D3D3;" title="Light Grey"></span> <!-- Light Grey -->
+                    </div>                    
+                    
+
+                    <!-- Size options -->
+                    <h4>Sizes:</h4>
+                    <div class="sizes">
+                        <button>XS</button>
+                        <button>S</button>
+                        <button>M</button>
+                        <button>L</button>
+                        <button>XL</button>
+                    </div>
+                </div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- Collection Section Ends -->
+ 
+    <!-- Footer Section Starts -->
+    <section class="footer">
+        <div class="share">
+            <a href="https://www.facebook.com/ThREaNDsApparel?mibextid=ZbWKwL" target="_blank" class="fab fa-facebook-f" aria-label="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank" class="fab fa-twitter" aria-label="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram" aria-label="Instagram"></a>
+            <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+            <a href="https://www.pinterest.com" target="_blank" class="fab fa-pinterest" aria-label="Pinterest"></a>
+        </div>
+        <div class="credit">created by <span>BSIndTech Inspire - Group 1</span> | all rights reserved</div>
+    </section>
+    <!-- Footer Section Ends -->
+
+    <script src="script.js"></script>
+</body>
+</html>

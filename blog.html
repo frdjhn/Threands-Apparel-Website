@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threands Apparel - Blogs</title>
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section Starts -->
+    <header class="header">
+        <a href="home.html" class="logo">
+            <img src="home/Threands.png" alt="Threands Logo">
+        </a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="collection.html">Collection</a>
+            <a href="product.html">Products</a>
+            <a href="review.html">Review</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="search-container">
+            <div class="search-form" id="search-form">
+                <input type="text" id="search-input" placeholder="Search items...">
+                <button id="search-button" onclick="searchItems()">Search</button>
+            </div>
+        </div>
+        <div class="fas fa-search" id="search-btn"></div>
+            
+            <div class="fas fa-shopping-cart" id="cart-btn"><span id="cart-count"></span></div>
+            <a href="user.html">
+                <div class="fas fa-user" id="user-btn"></div>
+            </a>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+
+        <div class="cart-items-container" id="cart-items">
+            <h2>Your Cart</h2>
+            <div id="cart-content">
+                <!-- Cart items will be added dynamically -->
+            </div>
+            <button id="checkout-btn" class="btn">Checkout</button>
+        </div>
+
+    </header>
+    <!-- Header Section Ends -->
+        
+    <!-- Blogs Section Ends -->
+    <section class="blogs" id="blogs">
+        <h1 class="heading">our <span>blogs</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="blogs/blog1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Threads and Trends</a>
+                    <span>by Fred Jhon S. Caño / January 2025</span>
+                    <p class="short-content">At Threads and Trends, we're all about keeping you in the loop with what's fresh in fashion. Whether you’re into the latest styles, fabric innovations, or discovering what’s next on the runway, our blog is your go-to source for staying ahead of the game.</p>
+                    <p class="full-content" style="display: none;">
+                    <br>At Threads and Trends, we're all about keeping you in the loop with what's fresh in fashion. Whether you’re into the latest styles, fabric innovations, or discovering what’s next on the runway, our blog is your go-to source for staying ahead of the game.
+                    <br>We break down the hottest trends—everything from color schemes to shapes—and give you the lowdown on how to bring them into your closet. Think of us as your personal fashion guide, helping you rock the season’s top looks with confidence. With a closer look at runway shows and street style, we’re here to help you express your unique vibe.
+                    <br>But it’s not just about what’s trending; we dive deep into the materials and textiles shaping the industry. From recycled fabrics to eco-friendly cotton, we showcase how the right materials can elevate your look while keeping the planet in mind. It’s all about blending style with sustainability, and we’re here to show you how.
+                    <br>Need some styling inspo? We’ve got you covered with tips on mixing and matching pieces, mastering layering, and rocking accessories that complete any outfit. Our aim is to boost your confidence in experimenting with new styles and creating looks that speak to your personal flair.
+                    <br>We also bring you exclusive interviews with top designers, stylists, and influencers. Get the inside scoop on the fashion world and see what’s driving the next big thing in style. 
+                    <br>Threads and Trends isn’t just a blog; it’s a community of people who love fashion and are passionate about making mindful, creative choices. Join us in exploring the ever-evolving world of style and wear it with enthusiasm—2025 is your year to shine!</p>
+                    <a href="javascript:void(0);" class="btn" onclick="toggleContent(this)">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="blogs/blog2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Fashion Forecast 2025</a>
+                    <span>by Harold Jim Ignacio / January 2025</span>
+                    <p class="short-content">As we kick off 2025, the world of fashion is buzzing with excitement. From throwback trends to fresh innovations, this year promises to bring a mix of fun, bold styles that let you express who you are. Here’s a breakdown of the key fashion trends we’re expecting to take over the scene this year.</p>
+                    <p class="full-content" style="display: none;">
+                        <br><strong>Y2K is Back, Baby</strong>
+                        <br>Who would’ve thought Y2K fashion would come storming back? That’s right – low-rise jeans, crop tops, and funky accessories are making their comeback. The early 2000s are calling, and we’re answering with a flair for bold colors, playful patterns, and an unapologetic attitude toward individuality. This year’s vibe is all about confidence, so get ready to rock those Y2K-inspired outfits.
+                        <br><strong>Sustainability Steals the Show</strong>
+                        <br>Fashion in 2025 is not just about looking good – it’s about doing good, too. Sustainability continues to be a major focus, with eco-friendly brands taking over. Circular fashion is the big thing this year, where brands are pushing boundaries with recycled materials and smarter production processes. We’ll be highlighting the game-changers in this movement, showing off collections that are as stylish as they are environmentally responsible.
+                        <br><strong>Smart Casual: The Best of Both Worlds</strong>
+                        <br>In today’s world, comfort and style don’t have to be enemies. The “smart casual” trend is all about mixing laid-back pieces with polished looks. Think oversized blazers with comfy athleisure or sneakers that step up your game. Whether you're heading to the office or grabbing drinks, this style is versatile enough for any occasion. We’ve got your back with styling tips to help you master this easy-going, yet chic trend.
+                        <br><strong>Earthy Vibes and Soft Pastels</strong>
+                        <br>If you’re a fan of calm, nature-inspired palettes, you’re in luck. In 2025, we’re seeing more earthy tones and soft pastels take over. Warm browns, subtle greens, and muted blues are perfect for creating peaceful, grounded looks. These colors mix well and can be worn in ways that highlight your personal style while staying on point with the latest trends.
+                        <br><strong>Accessories that Make a Statement</strong>
+                        <br>Don’t sleep on accessories this year. In 2025, bold is beautiful. Oversized bags, chunky jewelry, and attention-grabbing hats are going to be the essentials for finishing off your look. These statement pieces can take even the simplest outfit to the next level. We’ll share our tips on how to rock these accessories in style.
+                        <br>At ThREaNDs Apparel, we’re all about staying ahead of the curve while encouraging you to express your unique personality. Stick with us as we dive deeper into the hottest fashion trends of 2025, and get ready to update your wardrobe with looks that are fresh, fun, and totally you.</p>
+                    <a href="javascript:void(0);" class="btn" onclick="toggleContent(this)">read more</a>
+                </div>  
+            </div>
+                
+            <div class="box">
+                <div class="image">
+                    <img src="blogs/blog3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Easy Tips to Slay Your Outfits</a>
+                    <span>by Rezel Esclamado / January 2025</span>
+                    <p class="short-content">When it comes to fashion, styling your clothes is more than just getting dressed—it’s an art form that lets you showcase your unique vibe and personality. At Threands Apparel, we’re all about helping you elevate your wardrobe game. Here are some fun, practical, and easy-to-follow tips to make your outfits pop while keeping it authentic to your personal style.</p>
+                    <p class="full-content" style="display: none;">
+                        <br><strong>Layer Like a Pro</strong>
+                        <br>Layering isn’t just for keeping warm—it’s a surefire way to level up your look. Start simple: grab a classic t-shirt and throw on a lightweight cardigan, blazer, or denim jacket for that effortlessly cool vibe. Want more pizzazz? Play with textures! Pair a soft knit sweater with a sleek leather jacket, or layer a button-up shirt under a cropped hoodie. Top it off with a scarf or some bold jewelry, and boom—you’ve got a look that’s as versatile as it is stylish.
+                        <br><strong>Master Color Coordination</strong>
+                        <br>Colors can make or break your outfit. Ever heard of the color wheel? It’s your new BFF. Pair complementary colors like blue and orange or purple and yellow for eye-catching combos. Want a chill, put-together feel? Stick to analogous shades like teal, blue, and green. Feeling adventurous? Mix patterns! Rocking stripes with florals? Totally doable—just keep the colors in sync to avoid a chaotic vibe.
+                        <br><strong>Accessorize Like a Boss</strong>
+                        <br>Accessories are the secret weapon of any killer outfit. A belt can cinch your waist and bring shape to a flowy dress. A sleek crossbody bag can take your jeans-and-tee look from casual to chic. Don’t underestimate the power of hats, earrings, and necklaces—each piece adds personality and flair to your fit. Pro tip: bold accessories work best with simpler outfits, while subtle pieces balance out loud prints.
+                        <br><strong>Let Your Shoes Do the Talking</strong>
+                        <br>Your shoes set the tone for your whole outfit. Sneakers can turn a flowy dress into a sporty-chic moment, while ankle boots add a rocker edge to jeans and a blouse. Heels? Instant glam. The key is to match your footwear with the mood of your outfit and the occasion.
+                        <br><strong>Fit Is Everything</strong>
+                        <br>No matter how cool your outfit is, if it doesn’t fit well, it won’t shine. Tailoring your clothes to suit your body shape makes a world of difference. A perfectly fitted blazer or hemmed jeans can take your look from “meh” to “wow” in no time.
+                        <br><strong>Confidence Is Key</strong>
+                        <br>At the end of the day, the best thing you can wear is confidence. Whether you’re into minimalism, bold prints, or anything in between, the most important rule is to own your style. Experiment with your wardrobe, have fun with fashion, and make every outfit a reflection of YOU.
+                        <br>Ready to explore more styling ideas? Stay tuned to the Threands Apparel blog for more tips, tricks, and inspo to keep your fashion game strong. Keep slaying, fashionista!</p>
+                    <a href="javascript:void(0);" class="btn" onclick="toggleContent(this)">read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blogs Section Ends -->
+
+    <!-- Footer Section Starts -->
+    <section class="footer">
+        <div class="share">
+            <a href="https://www.facebook.com/ThREaNDsApparel?mibextid=ZbWKwL" target="_blank" class="fab fa-facebook-f" aria-label="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank" class="fab fa-twitter" aria-label="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram" aria-label="Instagram"></a>
+            <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+            <a href="https://www.pinterest.com" target="_blank" class="fab fa-pinterest" aria-label="Pinterest"></a>
+        </div>
+        <div class="credit">created by <span>BSIndTech Inspire - Group 1</span> | all rights reserved</div>
+    </section>
+    <!-- Footer Section Ends -->
+ 
+    <script src="script.js"></script>
+</body>
+</html>

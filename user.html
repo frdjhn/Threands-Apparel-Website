@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threands Apparel - User</title>
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section Starts -->
+    <header class="header">
+        <a href="home.html" class="logo">
+            <img src="home/Threands.png" alt="Threands Logo">
+        </a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="collection.html">Collection</a>
+            <a href="product.html">Products</a>
+            <a href="review.html">Review</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="search-container">
+            <div class="search-form" id="search-form">
+                <input type="text" id="search-input" placeholder="Search items...">
+                <button id="search-button" onclick="searchItems()">Search</button>
+            </div>
+        </div>
+        <div class="fas fa-search" id="search-btn"></div>
+            
+            <div class="fas fa-shopping-cart" id="cart-btn"><span id="cart-count"></span></div>
+            <a href="user.html">
+                <div class="fas fa-user" id="user-btn"></div>
+            </a>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+
+        <div class="cart-items-container" id="cart-items">
+            <h2>Your Cart</h2>
+            <div id="cart-content">
+                <!-- Cart items will be added dynamically -->
+            </div>
+            <button id="checkout-btn" class="btn">Checkout</button>
+        </div>
+
+    </header>
+    <!-- Header Section Ends -->
+     
+    <!-- User Profile Section Starts -->
+    <section class="user-profile">
+        <h1 class="heading">My <span>Profile</span></h1>
+        <div class="box profile-container">
+            <div class="profile-header">
+                <img src="review/fredreview.jpg" alt="User Profile Picture" class="profile-photo">
+                <div class="profile-details">
+                    <h2>Fred Jhon S. Caño</h2>
+                    <p>
+                        <span><i class="fas fa-user-friends"></i> 120 Followers</span>
+                        <span><i class="fas fa-user-plus"></i> 150 Following</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box purchases">
+            <h3>My Purchases</h3>
+            <div class="purchase-status">
+                <div class="status">
+                    <i class="fas fa-credit-card"></i>
+                    <p>To Pay</p>
+                </div>
+                <div class="status">
+                    <i class="fas fa-truck"></i>
+                    <p>To Ship</p>
+                </div>
+                <div class="status">
+                    <i class="fas fa-box"></i>
+                    <p>To Receive</p>
+                </div>
+                <div class="status">
+                    <i class="fas fa-star"></i>
+                    <p>To Rate</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box favorites">
+            <h3>My Favorites</h3>
+            <div class="favorites-list" id="user-favorites-container">
+                <!-- Favorites will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+    <!-- User Profile Section Ends -->
+
+   
+    <!-- Footer Section Starts -->
+    <section class="footer">
+        <div class="share">
+            <a href="https://www.facebook.com/ThREaNDsApparel?mibextid=ZbWKwL" target="_blank" class="fab fa-facebook-f" aria-label="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank" class="fab fa-twitter" aria-label="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram" aria-label="Instagram"></a>
+            <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+            <a href="https://www.pinterest.com" target="_blank" class="fab fa-pinterest" aria-label="Pinterest"></a>
+        </div>
+        <div class="credit">created by <span>BSIndTech Inspire - Group 1</span> | all rights reserved</div>
+    </section>
+    <!-- Footer Section Ends -->
+
+    <script src="script.js"></script>
+</body>
+</html>

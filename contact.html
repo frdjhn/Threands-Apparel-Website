@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threands Apparel - Contact Us</title>
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section Starts -->
+    <header class="header">
+        <a href="home.html" class="logo">
+            <img src="home/Threands.png" alt="Threands Logo">
+        </a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="collection.html">Collection</a>
+            <a href="product.html">Products</a>
+            <a href="review.html">Review</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="search-container">
+            <div class="search-form" id="search-form">
+                <input type="text" id="search-input" placeholder="Search items...">
+                <button id="search-button" onclick="searchItems()">Search</button>
+            </div>
+        </div>
+        <div class="fas fa-search" id="search-btn"></div>
+            
+            <div class="fas fa-shopping-cart" id="cart-btn"><span id="cart-count"></span></div>
+            <a href="user.html">
+                <div class="fas fa-user" id="user-btn"></div>
+            </a>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+
+        <div class="cart-items-container" id="cart-items">
+            <h2>Your Cart</h2>
+            <div id="cart-content">
+                <!-- Cart items will be added dynamically -->
+            </div>
+            <button id="checkout-btn" class="btn">Checkout</button>
+        </div>
+
+    </header>
+    <!-- Header Section Ends -->
+
+    <!-- Contact Section Starts -->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span> us</h1>
+
+        <div class="row">
+            <iframe class="map" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125786.24743521638!2d123.75529627730901!3d10.284865883269802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99dadf0cb3aed%3A0x8464eb7a98416a00!2sTalisay%2C%20Cebu!5e0!3m2!1sen!2sph!4v1734085399741!5m2!1sen!2sph"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            <form action="">
+            <h3>Get in touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-comment"></span>
+                <textarea placeholder="Message" rows="6"></textarea>
+            </div>
+            <input type="submit" value="Submit" class="btn">
+        </form>
+        </div>
+
+    <!-- Company Information Section -->
+    <div class="company-info-container">
+        <div class="company-info">
+            <h3>Company Information</h3>
+            <p><strong>Address:</strong> 123 Main St., City of Talisay, Cebu, 6045</p>
+            <p><strong>Phone:</strong> +1 (234) 567-890</p>
+            <p><strong>Email:</strong> <a href="mailto:contact@company.com">threandsapparel@company.com</a></p>
+            <p><strong>Business Hours:</strong> Mon-Fri, 9 AM - 5 PM</p>
+        </div>
+    </div>
+</section>
+<!-- Contact Section Ends -->
+
+    <!-- Contact Section Ends -->
+ 
+
+    <!-- Footer Section Starts -->
+    <section class="footer">
+        <div class="share">
+            <a href="https://www.facebook.com/ThREaNDsApparel?mibextid=ZbWKwL" target="_blank" class="fab fa-facebook-f" aria-label="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank" class="fab fa-twitter" aria-label="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram" aria-label="Instagram"></a>
+            <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+            <a href="https://www.pinterest.com" target="_blank" class="fab fa-pinterest" aria-label="Pinterest"></a>
+        </div>
+        <div class="credit">created by <span>BSIndTech Inspire - Group 1</span> | all rights reserved</div>
+    </section>
+    <!-- Footer Section Ends -->
+
+<script src="script.js"></script>
+</body>
+</html>
